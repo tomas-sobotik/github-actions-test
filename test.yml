@@ -1,0 +1,7 @@
+name: Tomas
+age: 35
+address: "Bohuminska 1595"
+active: true  
+key:
+    key: value
+    key2: value2
