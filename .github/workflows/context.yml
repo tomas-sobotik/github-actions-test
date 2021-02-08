@@ -1,5 +1,5 @@
 name: Context
-on: push
+on: [push, pull_request]
 
 jobs:
   functions:
@@ -14,6 +14,7 @@ jobs:
 
   one:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push'
     steps:
       - name: Dump GitHub context
         env:
